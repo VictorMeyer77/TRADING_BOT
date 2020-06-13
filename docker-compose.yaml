@@ -1,0 +1,32 @@
+version: '3'
+
+services :
+
+  mongodb :
+    container_name: mongo
+    image : mongo:latest
+    volumes:
+    - ./mongodb:/data/db
+    ports :
+       - "27017:27017"
+    environment:
+      - TZ="Europe/Paris"
+    network_mode: host
+
+  news-predicter:
+    container_name: NEWS_PREDICTER
+    build: NewsPredicter
+    volumes:
+    - ./NewsPredicter/output/logs/:/output/logs
+    - ./NewsPredicter/output/model/:/output/model
+    - ./NewsPredicter/output/prices/:/output/prices
+    depends_on:
+      - mongodb
+    environment:
+      - TZ="Europe/Paris"
+    command: "sh entry.sh"
+    network_mode: host
+
+volumes:
+  mongodb:
+  NewsPredicter:

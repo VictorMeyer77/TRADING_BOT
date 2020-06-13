@@ -1,0 +1,36 @@
+{
+
+  "initSymbolJsonPath": "data/symboles/initSymboles.json",
+  "initNewsDirPath": "data/news/json",
+  "logDirPath": "output/logs",
+  "pricesPath": "output/prices/prices.csv",
+  "newsKeyApi": "5512610f5ac64c2d8987eeba251cd0f3",
+
+  "mongo": {
+      "host": "localhost",
+      "port": 27017,
+      "newsName": "news",
+      "newsToPredName": "newsToPred",
+      "modelName": "models",
+      "symbolName": "symboles"
+  },
+
+  "model": {
+      "nbDayBeforePred": 1,
+      "deltaToTrade": 3,
+      "maxNbLayer": 0,
+      "nbNeurPerLayer": [3],
+      "layerActivation": ["relu", "tanh", "softmax"],
+      "nbOutput": 3,
+      "epochs": 10,
+      "batchSize": 1,
+      "modelDir": "output/model/"
+  },
+
+  "trade": {
+
+    "stoploss": 3,
+    "takeprofit": 3
+  }
+
+}
