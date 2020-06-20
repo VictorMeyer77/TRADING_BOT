@@ -20,3 +20,6 @@ class Mongo:
 
         symbolesDb = client[mongoConf["symbolName"]]
         self.symbolesCol = symbolesDb[mongoConf["symbolName"]]
+
+        predictionDb = client[mongoConf["predictionName"]]
+        self.predictionCol = predictionDb[mongoConf["predictionName"]]

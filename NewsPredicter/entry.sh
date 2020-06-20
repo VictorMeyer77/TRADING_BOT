@@ -2,10 +2,9 @@
 
 # initialisation
 
-/usr/local/bin/python3.8 launchInitialisation.py
-/usr/local/bin/python3.8 launchNewsSearch.py
-/usr/local/bin/python3.8 launchUpdatePrices.py
-/usr/local/bin/python3.8 launchMoulinette.py
+python3 launchInitialisation.py
+python3 launchNewsSearch.py
+python3 launchUpdatePrices.py
+python3 launchMoulinette.py
 
-# activation crontab
-/usr/sbin/crond -f -l 8
+/bin/sh

@@ -5,7 +5,7 @@ from lib.models import Models
 from lib.mongo import Mongo
 from lib.symbolesDao import SymbolesDao
 from lib.logger import Logger
-from lib.trader import Trader
+from lib.signal import Signal
 import json
 
 conf = json.load(open("conf/configuration.json", "r"))
@@ -29,5 +29,5 @@ x, y = newsFormater.getTrainingData()
 models = Models(x, y, x, y, mongo.modelCol, conf["model"], logger)
 models.loadModel()
 
-trader = Trader(newsDao.getDfToPred(), newsFormater, logger, models, symboles)
-trader.run()
+signal = Signal(newsDao.getDfToPred(), newsFormater, logger, models, symboles, conf, mongo.predictionCol)
+signal.run()

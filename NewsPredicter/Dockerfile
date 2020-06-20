@@ -5,7 +5,7 @@ ADD conf /conf/
 ADD data /data/
 ADD launchInitialisation.py /
 ADD launchNewsSearch.py /
-ADD launchTradeNews.py /
+ADD launchSendSignal.py /
 ADD launchMoulinette.py /
 ADD launchUpdatePrices.py /
 ADD entry.sh /
@@ -20,8 +20,15 @@ RUN dpkg --add-architecture armhf && dpkg --add-architecture arm64 \
         libpython3-dev libpython3-all-dev \
         libpython3-dev:armhf libpython3-all-dev:armhf \
         libpython3-dev:arm64 libpython3-all-dev:arm64 g++ gcc \
-        gfortran libatlas-base-dev libopenblas-dev liblapack-dev libxml2-dev libxslt-dev
+        gfortran libatlas-base-dev libopenblas-dev liblapack-dev libxml2-dev libxslt-dev \
+        libhdf5-dev libc-ares-dev libeigen3-dev libblas-dev cython cron
 
-RUN pip3 install numpy https://dl.google.com/coral/python/tflite_runtime-2.1.0.post1-cp37-cp37m-linux_armv7l.whl
+RUN wget https://github.com/Qengineering/Tensorflow-Raspberry-Pi/raw/master/tensorflow-2.1.0-cp37-cp37m-linux_armv7l.whl
+
+RUN pip3 install pybind11 h5py
+RUN pip3 install numpy pip3 install tensorflow-2.1.0-cp37-cp37m-linux_armv7l.whl
 RUN pip3 install scikit-learn --index-url https://piwheels.org/simple
 RUN pip3 install pandas nltk yfinance newsapi-python pymongo lxml html5lib BeautifulSoup4
+
+RUN chmod 777 /entry.sh
+RUN /usr/bin/crontab /crontab.txt
