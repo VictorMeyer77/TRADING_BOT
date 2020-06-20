@@ -7,7 +7,7 @@
   "newsKeyApi": "5512610f5ac64c2d8987eeba251cd0f3",
 
   "mongo": {
-      "host": "raspberry",
+      "host": "raspberrypi",
       "port": 27017,
       "newsName": "news",
       "newsToPredName": "newsToPred",
