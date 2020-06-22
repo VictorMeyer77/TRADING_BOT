@@ -14,8 +14,8 @@ class NewsFormater:
         self.prices = prices
         self.news = news
         self.logger = logger
-        self.nbDayToPred = nbDayToPred
-        self.deltaToPred = deltaToPred
+        self.nbDayToPred = int(nbDayToPred)
+        self.deltaToPred = float(deltaToPred)
         self.clearDataset = self.getClearDataset()
         self.keywords = self.getUsefullWords(self.getAllWords(self.clearDataset))
 
@@ -160,8 +160,8 @@ class NewsFormater:
                 banInd.append(index)
 
             else:
-                start = prices.at[tmp.index[0], "open"]
-                end = prices.at[(tmp.index + self.nbDayToPred)[0], "close"]
+                start = float(prices.at[tmp.index[0], "open"])
+                end = float(prices.at[(tmp.index + self.nbDayToPred)[0], "close"])
 
                 if (end - start) / start > self.deltaToPred / 100:
                     priceNews.at[index, "trend"] = 1

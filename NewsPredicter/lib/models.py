@@ -16,7 +16,7 @@ import shutil
 
 class Models:
 
-    def __init__(self, xTrain, yTrain, xTest, yTest, modelCol, conf, logger):
+    def __init__(self, xTrain, yTrain, xTest, yTest, modelCol, conf, logger, modelDir):
 
         self.modelCol = modelCol
         self.xTrain = xTrain
@@ -28,6 +28,7 @@ class Models:
         self.model = None
         self.conf = conf
         self.logger = logger
+        self.modelDir = modelDir
 
     # SKLEARN
 
@@ -176,11 +177,12 @@ class Models:
         bestStats = bestStats.sort_values(by=["acc", "accTra"], ascending=False)
 
         if bestStats.shape[0] < 1:
-            self.model = self.models[self.stats.sort_values(by=["acc", "accTra"], ascending=False).index[0]]
+            bestModelType = self.stats.sort_values(by=["nbTrade", "acc", "accTra"], ascending=False).index[0]
+            self.model = self.models[bestModelType]
+            self.logger.addLog("INFO", "Models", "Meilleur modèle: {}".format(bestModelType))
         else:
             self.model = self.models[bestStats.index[0]]
-
-        self.logger.addLog("INFO", "Models", "Meilleur modèle: {}".format(bestStats.index[0]))
+            self.logger.addLog("INFO", "Models", "Meilleur modèle: {}".format(bestStats.index[0]))
 
     # créer un json récapitulaitf de la moulinette
 
@@ -211,11 +213,11 @@ class Models:
         start = datetime.now().timestamp()
         self.models = {}
         self.linearSvc()
-        pattern = self.getPatternToTrain(self.conf["maxNbLayer"],
+        pattern = self.getPatternToTrain(int(self.conf["maxNbLayer"]),
                                          self.conf["nbNeurPerLayer"],
                                          self.conf["layerActivation"],
-                                         self.conf["nbOutput"])
-        self.generateMlp(pattern, self.conf["batchSize"], self.conf["epochs"])
+                                         int(self.conf["nbOutput"]))
+        self.generateMlp(pattern, int(self.conf["batchSize"]), int(self.conf["epochs"]))
         self.setModelStat()
         self.setBestModel()
         self.saveModel()
@@ -230,9 +232,9 @@ class Models:
         self.cleanModelDir()
 
         if self.model[1] == "keras":
-            self.model[0].save(self.conf["modelDir"] + self.model[1])
+            self.model[0].save(self.modelDir + self.model[1])
         elif self.model[1] == "sklearn":
-            dump(self.model[0], self.conf["modelDir"] + "sklearn.joblib")
+            dump(self.model[0], self.modelDir + "sklearn.joblib")
 
         self.logger.addLog("INFO", "Models", "Sauvegarde du modèle")
 
@@ -241,29 +243,30 @@ class Models:
     def loadModel(self):
 
         self.logger.addLog("INFO", "Models", "Chargement du modèle")
-        modelType = os.listdir(self.conf["modelDir"])
+        modelType = os.listdir(self.modelDir)
+        modelType.remove(".gitignore")
 
         if len(modelType) > 0:
 
             if modelType[0] == "keras":
-                self.model = [load_model(self.conf["modelDir"] + modelType[0]), modelType[0]]
+                self.model = [load_model(self.modelDir + modelType[0]), modelType[0]]
             elif modelType[0] == "sklearn.joblib":
-                self.model = [load(self.conf["modelDir"] + "sklearn.joblib"), "sklearn"]
+                self.model = [load(self.modelDir + "sklearn.joblib"), "sklearn"]
 
         else:
 
             self.model = None
-            print("Aucun modèle à charger")
+            self.logger.addLog("WARNING", "Models", "Aucun modèle à charger")
 
     # supprime modèle existant
 
     def cleanModelDir(self):
 
         self.logger.addLog("INFO", "Models", "Suppresion des modèles")
-        saveModelPath = os.listdir(self.conf["modelDir"])
+        saveModelPath = os.listdir(self.modelDir)
 
         if len(saveModelPath) > 0:
             if saveModelPath[0] == "keras":
-                shutil.rmtree(self.conf["modelDir"] + saveModelPath[0])
+                shutil.rmtree(self.modelDir + saveModelPath[0])
             elif saveModelPath[0] == "sklearn.joblib":
-                os.remove(self.conf["modelDir"] + saveModelPath[0])
+                os.remove(self.modelDir + saveModelPath[0])

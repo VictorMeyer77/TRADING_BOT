@@ -23,3 +23,6 @@ class Mongo:
 
         predictionDb = client[mongoConf["predictionName"]]
         self.predictionCol = predictionDb[mongoConf["predictionName"]]
+
+        configurationDb = client[mongoConf["configurationName"]]
+        self.configurationCol = configurationDb[mongoConf["configurationName"]]

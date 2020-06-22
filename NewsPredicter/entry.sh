@@ -2,9 +2,8 @@
 
 # initialisation
 
-python3 launchInitialisation.py
-python3 launchNewsSearch.py
-python3 launchUpdatePrices.py
-python3 launchMoulinette.py
+PYTHONHASHSEED=0 python3 launchInitialisation.py
+PYTHONHASHSEED=0 python3 launchUpdatePrices.py
+PYTHONHASHSEED=0 python3 launchMoulinette.py
 
 /bin/sh

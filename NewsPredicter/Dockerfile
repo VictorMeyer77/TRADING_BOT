@@ -4,7 +4,8 @@ ADD lib /lib/
 ADD conf /conf/
 ADD data /data/
 ADD launchInitialisation.py /
-ADD launchNewsSearch.py /
+ADD launchNewsSearchToTrain.py /
+ADD launchNewsSearchToPred.py /
 ADD launchSendSignal.py /
 ADD launchMoulinette.py /
 ADD launchUpdatePrices.py /
@@ -21,14 +22,13 @@ RUN dpkg --add-architecture armhf && dpkg --add-architecture arm64 \
         libpython3-dev:armhf libpython3-all-dev:armhf \
         libpython3-dev:arm64 libpython3-all-dev:arm64 g++ gcc \
         gfortran libatlas-base-dev libopenblas-dev liblapack-dev libxml2-dev libxslt-dev \
-        libhdf5-dev libc-ares-dev libeigen3-dev libblas-dev cython cron
+        libhdf5-dev libc-ares-dev libeigen3-dev libblas-dev cython cron python-h5py
 
 RUN wget https://github.com/Qengineering/Tensorflow-Raspberry-Pi/raw/master/tensorflow-2.1.0-cp37-cp37m-linux_armv7l.whl
 
-RUN pip3 install pybind11 h5py
-RUN pip3 install numpy pip3 install tensorflow-2.1.0-cp37-cp37m-linux_armv7l.whl
-RUN pip3 install scikit-learn --index-url https://piwheels.org/simple
+RUN pip3 install firebase-admin scikit-learn --index-url https://piwheels.org/simple
 RUN pip3 install pandas nltk yfinance newsapi-python pymongo lxml html5lib BeautifulSoup4
+RUN pip3 install pybind11 numpy
+RUN pip3 install --upgrade setuptools
+RUN pip3 install tensorflow-2.1.0-cp37-cp37m-linux_armv7l.whl
 
-RUN chmod 777 /entry.sh
-RUN /usr/bin/crontab /crontab.txt
