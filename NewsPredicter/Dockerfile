@@ -4,8 +4,9 @@ ADD lib /lib/
 ADD conf /conf/
 ADD data /data/
 ADD launchInitialisation.py /
-ADD launchNewsSearch.py /
-ADD launchTradeNews.py /
+ADD launchNewsSearchToPred.py /
+ADD launchNewsSearchToTrain.py /
+ADD launchSendSignal.py /
 ADD launchMoulinette.py /
 ADD launchUpdatePrices.py /
 ADD entry.sh /

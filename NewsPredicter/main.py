@@ -6,7 +6,7 @@ from lib.models import Models
 from lib.mongo import Mongo
 from lib.symbolesDao import SymbolesDao
 from lib.logger import Logger
-import json
+from lib.configuration import Configuration
 
 
 # ---- ÉXÉCUTE UN BACKTEST ---- #
@@ -14,12 +14,12 @@ import json
 
 if __name__ == "__main__":
     
-    conf = json.load(open("conf/configuration.json", "r"))
+    configuration = Configuration()
+    logger = Logger(configuration.getConf()["logDirPath"])
+    mongo = Mongo(configuration.getConf()["mongo"])
+    configuration.setCollection(mongo.configurationCol)
+    conf = configuration.getConf()
 
-    logger = Logger(conf["logDirPath"])
-
-    mongo = Mongo(conf["mongo"])
-    
     symbolesDao = SymbolesDao(mongo.symbolesCol, conf["initSymbolJsonPath"], logger)
     symbolesDao.hydrateInitSymboles()
     symboles = symbolesDao.getSymboles()
@@ -27,7 +27,7 @@ if __name__ == "__main__":
     pricesDao = PricesDao(symboles, logger)
 
     newsDao = NewsDao(mongo.newsCol, mongo.newsColToPredCol, conf["newsKeyApi"],
-                      symbolesDao, conf["initNewsDirPath"], logger)
+                      symbolesDao, logger)
     newsDao.hydrateInitNews()
 
     #pricesDao.setPriceDf(60)
@@ -36,18 +36,19 @@ if __name__ == "__main__":
     pricesDao.loadPrices(conf["pricesPath"])
 
     newsFormater = NewsFormater(symboles, newsDao.getDfToTrain(), pricesDao.prices,
-                                conf["model"]["nbDayBeforePred"], conf["model"]["deltaToTrade"], logger)
+                                conf["userParam"]["model"]["nbDayBeforePred"],
+                                conf["userParam"]["model"]["deltaToTrade"], logger)
 
     # au vue de notre faible quantité de données
     # il n'y a pas encore de données de validation
     x, y = newsFormater.getTrainingData()
 
-    models = Models(x, y, x, y, mongo.modelCol, conf["model"], logger)
+    models = Models(x, y, x, y, mongo.modelCol, conf["userParam"]["model"], logger, conf["modelDir"])
     models.run()
     models.loadModel()
     model = models.model
 
     backest = Backtest(newsFormater, pricesDao.prices)
     newsToTest = newsDao.getDfToTrain()
-    backest.setParam(model[0], model[1], 10000, 500, conf["trade"]["stoploss"], conf["trade"]["takeprofit"])
+    backest.setParam(model[0], model[1], 10000, 500, conf["userParam"]["trade"]["stoploss"], conf["userParam"]["trade"]["takeprofit"])
     backest.run(newsToTest)

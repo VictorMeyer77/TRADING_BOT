@@ -8,12 +8,11 @@ import pandas as pd
 
 class NewsDao:
 
-    def __init__(self, newsCol, newsToPredCol, apiKey, symbolesDao, initNewsDirPth, logger):
+    def __init__(self, newsCol, newsToPredCol, apiKey, symbolesDao, logger):
 
         self.newsCol = newsCol
         self.newsToPredCol = newsToPredCol
         self.symbolesDao = symbolesDao
-        self.initNewsDirPth = initNewsDirPth
         self.newsApi = NewsApiClient(api_key=apiKey)
         self.logger = logger
 
@@ -25,16 +24,14 @@ class NewsDao:
             self.newsCol.insert_one(news)
             self.logger.addLog("INFO", "NewsDao", "Insertion news: {}".format(str(news)))
         except Exception as e:
-            self.logger.addLog("ERROR", "NewsDao", "ailed to insert news: {} \n {}".format(str(news), e))
+            self.logger.addLog("ERROR", "NewsDao", "Failed to insert news: {} \n {}".format(str(news), e))
 
     # test si une news est déjà dans la base de news
 
     def isNewsExist(self, news):
 
-        if self.newsCol.find_one({"_id": news["_id"]}) is not None:
-            return True
-        else:
-            return False
+        return self.newsCol.find_one({"_id": news["_id"]}) is not None
+
 
     # insert une news dans la base de news de prediction
 
@@ -100,7 +97,7 @@ class NewsDao:
         self.logger.addLog("INFO", "NewsDao",
                            "Transfert de {} news à prédire dans la base de news".format(str(newsToPredJson.count())))
 
-    # récupère et insere dans les bases les nouvelles news
+    # récupère et insère dans les bases les news en differenciant celle à prédire aux autres
 
     def getNews(self):
 
@@ -130,26 +127,40 @@ class NewsDao:
                             self.logger.addLog("INFO", "NewsDao", "Nouvelle news {} à prédire".format(nom.upper()))
                     else:
                         self.insertNews(art)
-                        self.logger.addLog("INFO", "NewsDao", "Nouvelle news {} pour l'entrainement".format(nom.upper()))
+                        self.logger.addLog("INFO", "NewsDao",
+                                           "Nouvelle news {} pour l'entrainement".format(nom.upper()))
+
+            # mise à jour du flag
+            articleDf = pd.DataFrame(entNnews["articles"])
+            if articleDf.shape[0] > 0:
+                lastArt = articleDf.sort_values(by=["publishedAt"], ascending=False)
+                self.symbolesDao.updateFlag(lastArt.at[0, "entreprise"], pd.to_datetime(lastArt.at[0, "publishedAt"]))
 
     # ne sert qu'a l'initialisation pour charger un minimum de news
 
     def hydrateInitNews(self):
 
-        self.logger.addLog("INFO", "NewsDao", "Initialisation des news")
-        for sym in self.symbolesDao.getSymboles().nom:
-            content = json.load(open("{0}/{1}.json".format(self.initNewsDirPth, sym.lower()), "r", encoding="utf-8"))
+        self.logger.addLog("INFO", "NewsDao", "Récupération des nouvelles news pour l'initialisation")
 
-            for art in content["articles"]:
+        for nom in self.symbolesDao.getSymboles().nom:
 
-                art["entreprise"] = sym.lower()
+            try:
+                entNnews = self.newsApi.get_everything(q=nom.lower(),
+                                                       sources="les-echos",
+                                                       from_param=self.symbolesDao.getFlag(nom),
+                                                       to=pd.to_datetime("today"))
+            except Exception:
+                entNnews = self.newsApi.get_everything(q=nom.lower(),
+                                                       sources="les-echos")
+
+            for art in entNnews["articles"]:
+                art["entreprise"] = nom.lower()
                 art["_id"] = self.hash(art)
-
-                if not self.isNewsExist(art):
-                    self.insertNews(art)
+                self.insertNews(art)
+                self.logger.addLog("INFO", "NewsDao", "Nouvelle news {} pour l'entrainement".format(nom.upper()))
 
             # mise à jour du flag
-            articleDf = pd.DataFrame(content["articles"])
+            articleDf = pd.DataFrame(entNnews["articles"])
             if articleDf.shape[0] > 0:
                 lastArt = articleDf.sort_values(by=["publishedAt"], ascending=False)
                 self.symbolesDao.updateFlag(lastArt.at[0, "entreprise"], pd.to_datetime(lastArt.at[0, "publishedAt"]))
@@ -161,7 +172,7 @@ class NewsDao:
 
         now = pd.to_datetime("today")
         newsDate = pd.to_datetime(news["publishedAt"])
-        return now.timestamp() - 24 * 60 * 60 < newsDate.timestamp()
+        return now.timestamp() - 24 * 60 * 60 < newsDate.timestamp() or newsDate.dayofweek not in [5, 6]
 
     # retourne un hash de la news pour l'unicité de la base
     # PYTHONHASHSEED=0

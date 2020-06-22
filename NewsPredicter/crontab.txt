@@ -1,5 +1,7 @@
-50 6 * * *  /usr/local/bin/python3.8 launchUpdatePrices.py
-55 6 * * * /usr/local/bin/python3.8 launchNewsSearch.py
-0 7 * * * /usr/local/bin/python3.8 launchMoulinette.py
-15 9-17 * * 1-5 /usr/local/bin/python3.8 launchNewsSearch.py
-20 9-17 * * 1-5 /usr/local/bin/python3.8 launchTradeNews.py
+50 6 * * *  PYTHONHASHSEED=0  /usr/local/bin/python3.8 launchUpdatePrices.py
+0 7 * * 1-5 PYTHONHASHSEED=0 /usr/local/bin/python3.8  launchMoulinette.py
+0 10 * * 1-5 PYTHONHASHSEED=0 /usr/local/bin/python3.8 launchNewsSearchToPred.py
+30 13 * * 1-5 PYTHONHASHSEED=0 /usr/local/bin/python3.8 launchNewsSearchToPred.py
+0 17 * * 1-5 PYTHONHASHSEED=0 /usr/local/bin/python3.8 launchNewsSearchToPred.py
+20 9-17 * * 1-5 PYTHONHASHSEED=0 /usr/local/bin/python3.8 launchSendSignal.py
+0 22 * * 7 PYTHONHASHSEED=0 /usr/local/bin/python3.8 launchNewsSearchToTrain.py

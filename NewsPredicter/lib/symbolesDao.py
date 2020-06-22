@@ -18,7 +18,7 @@ class SymbolesDao:
 
     def hydrateInitSymboles(self):
 
-        self.logger.addLog("INFO", "SymbolesDao", "Initialistaion des symboles avec valuers du CAC 40")
+        self.logger.addLog("INFO", "SymbolesDao", "Initialistaion des symboles avec valeurs EURONEXT FR")
         symboles = json.load(open(self.initSymbolesJsonPath, "r", encoding="utf-8"))
 
         for symbole in symboles["symboles"]:
@@ -30,23 +30,32 @@ class SymbolesDao:
                 self.logger.addLog("ERROR", "SymbolesDao",
                                    "Failed to insert symboles: {0} \n {1}".format(str(symbole), e))
 
-    # retourne les symboles à traiter
+    # retourne les symboles enregistrés
 
     def getSymboles(self):
 
         symbolesJson = self.collection.find({})
-        symboles = {"indice": [], "nom": [], "supersecteur": [], "secteur": [], "pays": [], "flag": []}
+        symboles = {"indice": [], "mt_id": [], "nom": [], "supersecteur": [], "secteur": [], "pays": [], "flag": [], "actif": []}
 
         for symbole in symbolesJson:
             symboles["indice"].append(symbole["_id"])
+            symboles["mt_id"].append(symbole["mt_id"])
             symboles["nom"].append(symbole["nom"])
             symboles["supersecteur"].append(symbole["supersecteur"])
             symboles["secteur"].append(symbole["secteur"])
             symboles["pays"].append(symbole["pays"])
             symboles["flag"].append(symbole["flag"])
+            symboles["actif"].append(int(symbole["actif"]))
 
         self.logger.addLog("INFO", "SymbolesDao", "{} symboles à traités".format(str(len(symboles["indice"]))))
         return pd.DataFrame(symboles)
+
+    # retourne les symboles actifs
+
+    def getActivSymboles(self):
+
+        symboles = self.getSymboles()
+        return symboles[symboles["actif"] == 1]
 
     # test si le symbole existe
 
@@ -61,7 +70,7 @@ class SymbolesDao:
 
     def updateFlag(self, symboleName, date):
 
-        currentSymbole = self.collection.find({"nom": symboleName.upper()})[0]
+        currentSymbole = self.collection.find({"nom": symboleName.lower()})[0]
         updateSymbole = dict(currentSymbole)
         updateSymbole["flag"] = date
         self.collection.update_one(currentSymbole, {"$set": updateSymbole})
