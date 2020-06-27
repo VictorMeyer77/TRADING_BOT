@@ -49,7 +49,5 @@ class Logger:
     # teste si le fichier de log existe
     def isLogFileExist(self):
 
-        if os.path.exists(self.currentLogPath):
-            return True
-        else:
-            return False
+        return os.path.exists(self.currentLogPath)
+

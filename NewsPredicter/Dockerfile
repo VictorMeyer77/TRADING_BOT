@@ -31,4 +31,3 @@ RUN pip3 install pandas nltk yfinance newsapi-python pymongo lxml html5lib Beaut
 RUN pip3 install pybind11 numpy
 RUN pip3 install --upgrade setuptools
 RUN pip3 install tensorflow-2.1.0-cp37-cp37m-linux_armv7l.whl
-
