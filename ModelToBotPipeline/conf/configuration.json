@@ -1,0 +1,10 @@
+{
+  "mongo": {
+      "host": "debian",
+      "port": 27017,
+      "predictionName": "prediction",
+      "accountInfoName": "accountInfo",
+      "tradeInfoName": "tradeInfo",
+      "configurationName": "configuration"
+  }
+}

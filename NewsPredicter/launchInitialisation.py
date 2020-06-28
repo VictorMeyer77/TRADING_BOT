@@ -10,6 +10,7 @@ mongo = Mongo(configuration.getConf()["mongo"])
 configuration.setCollection(mongo.configurationCol)
 conf = configuration.getConf()
 
+configuration.initialize()
 symbolesDao = SymbolesDao(mongo.symbolesCol, conf["initSymbolJsonPath"], logger)
 symbolesDao.hydrateInitSymboles()
 newsDao = NewsDao(mongo.newsCol, mongo.newsColToPredCol, conf["newsKeyApi"], symbolesDao, logger)
