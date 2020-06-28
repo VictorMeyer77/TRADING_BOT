@@ -1,4 +1,5 @@
 {
+
   "initSymbolJsonPath": "/data/symboles/initSymboles.json",
   "logDirPath": "/output/logs",
   "pricesPath": "/output/prices/prices.csv",
@@ -6,7 +7,7 @@
   "newsKeyApi": "5512610f5ac64c2d8987eeba251cd0f3",
 
   "mongo": {
-      "host": "raspberrypi",
+      "host": "192.168.1.15",
       "port": 27017,
       "newsName": "news",
       "newsToPredName": "newsToPred",
@@ -30,6 +31,7 @@
     },
 
     "trade": {
+      "moneyByTrade": 200,
       "stoploss": 3,
       "takeprofit": 3
     }
