@@ -29,7 +29,7 @@ services :
 
   oracle-server:
     container_name: ORACLE_SERVER
-    build: ModelToBotPipeline
+    build: Api
     depends_on:
       - mongodb
     environment:
