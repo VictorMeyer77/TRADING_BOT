@@ -10,7 +10,7 @@ services :
     ports :
        - "27017:27017"
     environment:
-      - TZ="Europe/Paris"
+      - TZ=Europe/Paris
     network_mode: host
 
   news-predicter:
@@ -23,7 +23,7 @@ services :
     depends_on:
       - mongodb
     environment:
-      - TZ="Europe/Paris"
+      - TZ=Europe/Paris
     command: "sh entry.sh"
     network_mode: host
 
@@ -33,7 +33,7 @@ services :
     depends_on:
       - mongodb
     environment:
-      - TZ="Europe/Paris"
+      - TZ=Europe/Paris
     network_mode: host
     command: python3 main.py
 

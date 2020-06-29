@@ -7,16 +7,19 @@ from pymongo import MongoClient
 class Mongo:
 
     def __init__(self, mongoConf):
-        client = MongoClient(mongoConf["host"], mongoConf["port"])
+        self.client = MongoClient(mongoConf["host"], mongoConf["port"])
 
-        predictionDb = client[mongoConf["predictionName"]]
+        predictionDb = self.client[mongoConf["predictionName"]]
         self.predictionCol = predictionDb[mongoConf["predictionName"]]
 
-        accountInfoDb = client[mongoConf["accountInfoName"]]
+        accountInfoDb = self.client[mongoConf["accountInfoName"]]
         self.accountInfoCol = accountInfoDb[mongoConf["accountInfoName"]]
 
-        tradeInfoDb = client[mongoConf["tradeInfoName"]]
+        tradeInfoDb = self.client[mongoConf["tradeInfoName"]]
         self.tradeInfoCol = tradeInfoDb[mongoConf["tradeInfoName"]]
 
-        configurationDb = client[mongoConf["configurationName"]]
+        configurationDb = self.client[mongoConf["configurationName"]]
         self.configurationCol = configurationDb[mongoConf["configurationName"]]
+
+        symbolesDb = self.client[mongoConf["symbolesName"]]
+        self.symbolesCol = symbolesDb[mongoConf["symbolesName"]]

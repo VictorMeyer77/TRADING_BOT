@@ -244,7 +244,6 @@ class Models:
 
         self.logger.addLog("INFO", "Models", "Chargement du modèle")
         modelType = os.listdir(self.modelDir)
-        modelType.remove(".gitignore")
 
         if len(modelType) > 0:
 

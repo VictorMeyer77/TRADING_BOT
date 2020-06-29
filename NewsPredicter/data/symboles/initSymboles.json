@@ -1,1 +1,1182 @@
-{"symboles": [{"_id": "ABIO.PA", "nom": "albioma", "mt_id": "ABIO", "secteur": "utilities", "supersecteur": "utilities-renewable", "pays": "france", "flag": "", "actif": 0}, {"_id": "AC.PA", "nom": "accor", "mt_id": "AC", "secteur": "consumer cyclical", "supersecteur": "lodging", "pays": "france", "flag": "", "actif": 1}, {"_id": "AF.PA", "nom": "airfrance-klm", "mt_id": "AF", "secteur": "industrials", "supersecteur": "airlines", "pays": "france", "flag": "", "actif": 1}, {"_id": "AI.PA", "nom": "air liquide", "mt_id": "AI", "secteur": "basic materials", "supersecteur": "chemicals", "pays": "france", "flag": "", "actif": 1}, {"_id": "AKE.PA", "nom": "arkema", "mt_id": "AKE", "secteur": "basic materials", "supersecteur": "specialty chemicals", "pays": "france", "flag": "", "actif": 0}, {"_id": "ALO.PA", "nom": "alstom", "mt_id": "ALO", "secteur": "industrials", "supersecteur": "specialty industrial machinery", "pays": "france", "flag": "", "actif": 1}, {"_id": "ALTA.PA", "nom": "altarea", "mt_id": "ALTA", "secteur": "real estate", "supersecteur": "reit-residential", "pays": "france", "flag": "", "actif": 0}, {"_id": "AMUN.PA", "nom": "amundi", "mt_id": "AMUN", "secteur": "financial services", "supersecteur": "asset management", "pays": "france", "flag": "", "actif": 1}, {"_id": "ATE.PA", "nom": "alten", "mt_id": "ATE", "secteur": "technology", "supersecteur": "information technology services", "pays": "france", "flag": "", "actif": 1}, {"_id": "BN.PA", "nom": "danone", "mt_id": "BN", "secteur": "consumer defensive", "supersecteur": "packaged foods", "pays": "france", "flag": "", "actif": 1}, {"_id": "BNP.PA", "nom": "bnp paribas", "mt_id": "BNP", "secteur": "financial services", "supersecteur": "banks-regional", "pays": "france", "flag": "", "actif": 1}, {"_id": "BVI.PA", "nom": "bureau veritas", "mt_id": "BVI", "secteur": "industrials", "supersecteur": "consulting services", "pays": "france", "flag": "", "actif": 1}, {"_id": "CAP.PA", "nom": "capgemini", "mt_id": "CAP", "secteur": "technology", "supersecteur": "information technology services", "pays": "france", "flag": "", "actif": 1}, {"_id": "CARM.PA", "nom": "carmila", "mt_id": "CARM", "secteur": "real estate", "supersecteur": "reit-retail", "pays": "france", "flag": "", "actif": 0}, {"_id": "CDI.PA", "nom": "christian dior", "mt_id": "CDI", "secteur": "consumer cyclical", "supersecteur": "luxury goods", "pays": "france", "flag": "", "actif": 1}, {"_id": "CGG.PA", "nom": "cgg", "mt_id": "CGG", "secteur": "energy", "supersecteur": "oil & gas equipment & services", "pays": "france", "flag": "", "actif": 1}, {"_id": "COFA.PA", "nom": "coface", "mt_id": "COFA", "secteur": "financial services", "supersecteur": "insurance-reinsurance", "pays": "france", "flag": "", "actif": 1}, {"_id": "COX.PA", "nom": "nicox", "mt_id": "COX", "secteur": "healthcare", "supersecteur": "biotechnology", "pays": "france", "flag": "", "actif": 1}, {"_id": "DBV.PA", "nom": "dbv technologies", "mt_id": "DBV", "secteur": "healthcare", "supersecteur": "biotechnology", "pays": "france", "flag": "", "actif": 0}, {"_id": "DEC.PA", "nom": "jcdecaux", "mt_id": "DEC", "secteur": "communication services", "supersecteur": "advertising agencies", "pays": "france", "flag": "", "actif": 1}, {"_id": "DG.PA", "nom": "vinci", "mt_id": "DG", "secteur": "industrials", "supersecteur": "engineering & construction", "pays": "france", "flag": "", "actif": 1}, {"_id": "DIM.PA", "nom": "sartorius stedim biotech", "mt_id": "DIM", "secteur": "healthcare", "supersecteur": "medical instruments & supplies", "pays": "france", "flag": "", "actif": 0}, {"_id": "DSY.PA", "nom": "dassault systemes", "mt_id": "DSY", "secteur": "technology", "supersecteur": "software-application", "pays": "france", "flag": "", "actif": 1}, {"_id": "EDEN.PA", "nom": "edenred", "mt_id": "EDEN", "secteur": "financial services", "supersecteur": "credit services", "pays": "france", "flag": "", "actif": 1}, {"_id": "EDF.PA", "nom": "edf", "mt_id": "EDF", "secteur": "utilities", "supersecteur": "utilities-diversified", "pays": "france", "flag": "", "actif": 1}, {"_id": "EL.PA", "nom": "essilorluxottica", "mt_id": "EI", "secteur": "healthcare", "supersecteur": "medical instruments & supplies", "pays": "france", "flag": "", "actif": 1}, {"_id": "ELIS.PA", "nom": "elis", "mt_id": "ELIS", "secteur": "industrials", "supersecteur": "specialty business services", "pays": "france", "flag": "", "actif": 0}, {"_id": "EN.PA", "nom": "bouygues", "mt_id": "EN", "secteur": "industrials", "supersecteur": "engineering & construction", "pays": "france", "flag": "", "actif": 1}, {"_id": "ENGI.PA", "nom": "engie", "mt_id": "ENGI", "secteur": "utilities", "supersecteur": "utilities-diversified", "pays": "france", "flag": "", "actif": 1}, {"_id": "ENX.PA", "nom": "euronext", "mt_id": "ENX", "secteur": "financial services", "supersecteur": "financial data & stock exchanges", "pays": "france", "flag": "", "actif": 0}, {"_id": "EO.PA", "nom": "faurecia", "mt_id": "EO", "secteur": "consumer cyclical", "supersecteur": "auto parts", "pays": "france", "flag": "", "actif": 0}, {"_id": "ERA.PA", "nom": "eramet", "mt_id": "ERA", "secteur": "basic materials", "supersecteur": "other industrial metals & mining", "pays": "france", "flag": "", "actif": 0}, {"_id": "ETL.PA", "nom": "eutelsat", "mt_id": "ETL", "secteur": "technology", "supersecteur": "communication equipment", "pays": "france", "flag": "", "actif": 1}, {"_id": "FFP.PA", "nom": "ffp", "mt_id": "FFP", "secteur": "financial services", "supersecteur": "asset management", "pays": "france", "flag": "", "actif": 0}, {"_id": "EUCAR.PA", "nom": "europcar", "mt_id": "EUCAR", "secteur": "industrials", "supersecteur": "rental & leasing services", "pays": "france", "flag": "", "actif": 1}, {"_id": "FGR.PA", "nom": "eiffage", "mt_id": "FGR", "secteur": "industrials", "supersecteur": "engineering & construction", "pays": "france", "flag": "", "actif": 1}, {"_id": "FNAC.PA", "nom": "fnac darty", "mt_id": "FNAC", "secteur": "consumer cyclical", "supersecteur": "specialty retail", "pays": "france", "flag": "", "actif": 1}, {"_id": "FP.PA", "nom": "total", "mt_id": "FP", "secteur": "energy", "supersecteur": "oil & gas integrated", "pays": "france", "flag": "", "actif": 1}, {"_id": "GET.PA", "nom": "getlink", "mt_id": "GET", "secteur": "industrials", "supersecteur": "railroads", "pays": "france", "flag": "", "actif": 0}, {"_id": "GFC.PA", "nom": "gecina", "mt_id": "GFC", "secteur": "real estate", "supersecteur": "reit-office", "pays": "france", "flag": "", "actif": 0}, {"_id": "GLE.PA", "nom": "societe generale", "mt_id": "GLE", "secteur": "financial services", "supersecteur": "banks-regional", "pays": "france", "flag": "", "actif": 1}, {"_id": "GNFT.PA", "nom": "genfit", "mt_id": "GNFT", "secteur": "healthcare", "supersecteur": "biotechnology", "pays": "france", "flag": "", "actif": 1}, {"_id": "GTT.PA", "nom": "gaztransport & technigaz", "mt_id": "GTT1", "secteur": "energy", "supersecteur": "oil & gas equipment & services", "pays": "france", "flag": "", "actif": 1}, {"_id": "HO.PA", "nom": "thales", "mt_id": "HO", "secteur": "industrials", "supersecteur": "aerospace & defense", "pays": "france", "flag": "", "actif": 1}, {"_id": "ICAD.PA", "nom": "icade", "mt_id": "ICAD", "secteur": "real estate", "supersecteur": "reit-diversified", "pays": "france", "flag": "", "actif": 0}, {"_id": "ILD.PA", "nom": "iliad", "mt_id": "ILD", "secteur": "communication services", "supersecteur": "telecom services", "pays": "france", "flag": "", "actif": 1}, {"_id": "IPN.PA", "nom": "ipsen", "mt_id": "IPN", "secteur": "healthcare", "supersecteur": "drug manufacturers-specialty & generic", "pays": "france", "flag": "", "actif": 1}, {"_id": "KER.PA", "nom": "kering", "mt_id": "KER", "secteur": "consumer cyclical", "supersecteur": "footwear & accessories", "pays": "france", "flag": "", "actif": 1}, {"_id": "KOF.PA", "nom": "kaufman & broad", "mt_id": "KOF", "secteur": "consumer cyclical", "supersecteur": "residential construction", "pays": "france", "flag": "", "actif": 1}, {"_id": "KORI.PA", "nom": "korian", "mt_id": "KOR", "secteur": "healthcare", "supersecteur": "medical care facilities", "pays": "france", "flag": "", "actif": 1}, {"_id": "AB.PA", "nom": "ab science", "mt_id": "AB", "secteur": "healthcare", "supersecteur": "drug manufacturers\u2014specialty & generic", "pays": "france", "flag": "", "actif": 0}, {"_id": "LI.PA", "nom": "klepierre", "mt_id": "LI", "secteur": "real estate", "supersecteur": "reit-retail", "pays": "france", "flag": "", "actif": 0}, {"_id": "VRLA.PA", "nom": "verallia", "mt_id": "VRLA", "secteur": "consumer cyclical", "supersecteur": "packaging & containers", "pays": "france", "flag": "", "actif": 0}, {"_id": "LOCAL.PA", "nom": "solocal", "mt_id": "LOCAL", "secteur": "communication services", "supersecteur": "advertising agencies", "pays": "france", "flag": "", "actif": 1}, {"_id": "LR.PA", "nom": "legrand", "mt_id": "LR", "secteur": "industrials", "supersecteur": "specialty industrial machinery", "pays": "france", "flag": "", "actif": 1}, {"_id": "MAU.PA", "nom": "etablissements maurel & prom", "mt_id": "MAU", "secteur": "energy", "supersecteur": "oil & gas e&p", "pays": "france", "flag": "", "actif": 0}, {"_id": "MDM.PA", "nom": "maisons du monde ", "mt_id": "MDM", "secteur": "consumer cyclical", "supersecteur": "home improvement retail", "pays": "france", "flag": "", "actif": 0}, {"_id": "MERY.PA", "nom": "mercialys", "mt_id": "MERY", "secteur": "real estate", "supersecteur": "reit-retail", "pays": "france", "flag": "", "actif": 0}, {"_id": "MF.PA", "nom": "wendel", "mt_id": "MF", "secteur": "financial services", "supersecteur": "asset management", "pays": "france", "flag": "", "actif": 0}, {"_id": "MMB.PA", "nom": "lagardere", "mt_id": "MMB", "secteur": "consumer cyclical", "supersecteur": "travel services", "pays": "france", "flag": "", "actif": 1}, {"_id": "MMT.PA", "nom": "metropole television", "mt_id": "MMT", "secteur": "communication services", "supersecteur": "broadcasting", "pays": "france", "flag": "", "actif": 0}, {"_id": "MRN.PA", "nom": "mersen", "mt_id": "MRN", "secteur": "industrials", "supersecteur": "electrical equipment & parts", "pays": "france", "flag": "", "actif": 0}, {"_id": "NK.PA", "nom": "imerys", "mt_id": "NK", "secteur": "basic materials", "supersecteur": "building materials", "pays": "france", "flag": "", "actif": 1}, {"_id": "NXI.PA", "nom": "nexity", "mt_id": "NXI", "secteur": "real estate", "supersecteur": "real estate-diversified", "pays": "france", "flag": "", "actif": 1}, {"_id": "ORA.PA", "nom": "orange", "mt_id": "ORA", "secteur": "communication services", "supersecteur": "telecom services", "pays": "france", "flag": "", "actif": 1}, {"_id": "ORP.PA", "nom": "orpea", "mt_id": "ORP", "secteur": "healthcare", "supersecteur": "medical care facilities", "pays": "france", "flag": "", "actif": 0}, {"_id": "POM.PA", "nom": "compagnie plastic omnium", "mt_id": "POM", "secteur": "consumer cyclical", "supersecteur": "auto parts", "pays": "france", "flag": "", "actif": 0}, {"_id": "PUB.PA", "nom": "publicis", "mt_id": "PUB", "secteur": "communication services", "supersecteur": "advertising agencies", "pays": "france", "flag": "", "actif": 1}, {"_id": "RAL.PA", "nom": "rallye", "mt_id": "RAL", "secteur": "consumer defensive", "supersecteur": "grocery stores", "pays": "france", "flag": "", "actif": 0}, {"_id": "RI.PA", "nom": "pernod ricard", "mt_id": "RI", "secteur": "consumer defensive", "supersecteur": "beverages\u2014wineries & distilleries", "pays": "france", "flag": "", "actif": 1}, {"_id": "RIN.PA", "nom": "vilmorin", "mt_id": "RIN", "secteur": "consumer defensive", "supersecteur": "farm products", "pays": "france", "flag": "", "actif": 1}, {"_id": "RMS.PA", "nom": "herm\u00e8s", "mt_id": "RMS", "secteur": "consumer cyclical", "supersecteur": "luxury goods", "pays": "france", "flag": "", "actif": 1}, {"_id": "RNO.PA", "nom": "renault", "mt_id": "RNO", "secteur": "consumer cyclical", "supersecteur": "auto manufacturers", "pays": "france", "flag": "", "actif": 1}, {"_id": "ROTH.PA", "nom": "rothschild", "mt_id": "ROTH", "secteur": "financial services", "supersecteur": "capital markets", "pays": "france", "flag": "", "actif": 0}, {"_id": "RUI.PA", "nom": "rubis", "mt_id": "RUI", "secteur": "utilities", "supersecteur": "utilities-regulated gas", "pays": "france", "flag": "", "actif": 0}, {"_id": "RXL.PA", "nom": "rexel", "mt_id": "RXL", "secteur": "industrials", "supersecteur": "industrial distribution", "pays": "france", "flag": "", "actif": 0}, {"_id": "SAF.PA", "nom": "safran", "mt_id": "SAF", "secteur": "industrials", "supersecteur": "aerospace & defense", "pays": "france", "flag": "", "actif": 1}, {"_id": "SAN.PA", "nom": "sanofi", "mt_id": "SAN", "secteur": "healthcare", "supersecteur": "drug manufacturers-general", "pays": "france", "flag": "", "actif": 1}, {"_id": "SEV.PA", "nom": "suez", "mt_id": "SEV", "secteur": "utilities", "supersecteur": "utilities-regulated water", "pays": "france", "flag": "", "actif": 1}, {"_id": "SK.PA", "nom": "seb", "mt_id": "SK", "secteur": "consumer cyclical", "supersecteur": "furnishings fixtures & appliances", "pays": "france", "flag": "", "actif": 1}, {"_id": "SOP.PA", "nom": "sopra steria", "mt_id": "SOP", "secteur": "technology", "supersecteur": "information technology services", "pays": "france", "flag": "", "actif": 1}, {"_id": "SPIE.PA", "nom": "spie", "mt_id": "SPIE", "secteur": "industrials", "supersecteur": "engineering & construction", "pays": "france", "flag": "", "actif": 0}, {"_id": "SW.PA", "nom": "sodexo", "mt_id": "SW", "secteur": "industrials", "supersecteur": "specialty business services", "pays": "france", "flag": "", "actif": 1}, {"_id": "TCH.PA", "nom": "technicolor", "mt_id": "TCH", "secteur": "communication services", "supersecteur": "entertainment", "pays": "france", "flag": "", "actif": 0}, {"_id": "TFI.PA", "nom": "tf1", "mt_id": "TFI", "secteur": "communication services", "supersecteur": "broadcasting", "pays": "france", "flag": "", "actif": 1}, {"_id": "TKTT.PA", "nom": "tarkett", "mt_id": "TKTT", "secteur": "industrials", "supersecteur": "building products & equipment", "pays": "france", "flag": "", "actif": 0}, {"_id": "UG.PA", "nom": "peugeot", "mt_id": "UG", "secteur": "consumer cyclical", "supersecteur": "auto manufacturers", "pays": "france", "flag": "", "actif": 1}, {"_id": "VIE.PA", "nom": "veolia environnement", "mt_id": "VIE", "secteur": "industrials", "supersecteur": "waste management", "pays": "france", "flag": "", "actif": 1}, {"_id": "VIRP.PA", "nom": "virbac", "mt_id": "VIRP", "secteur": "healthcare", "supersecteur": "drug manufacturers-general", "pays": "france", "flag": "", "actif": 1}, {"_id": "VK.PA", "nom": "vallourec", "mt_id": "VK", "secteur": "basic materials", "supersecteur": "steel", "pays": "france", "flag": "", "actif": 1}, {"_id": "WLN.PA", "nom": "worldline", "mt_id": "WLN", "secteur": "technology", "supersecteur": "software-infrastructure", "pays": "france", "flag": "", "actif": 1}, {"_id": "ACA.PA", "nom": "credit agricole", "mt_id": "ACA", "secteur": "financial services", "supersecteur": "banks-regional", "pays": "france", "flag": "", "actif": 1}, {"_id": "BB.PA", "nom": "bic", "mt_id": "BB.FR", "secteur": "consumer defensive", "supersecteur": "household & personal products", "pays": "france", "flag": "", "actif": 1}, {"_id": "BIM.PA", "nom": "biomerieux", "mt_id": "BIM", "secteur": "healthcare", "supersecteur": "diagnostics & research", "pays": "france", "flag": "", "actif": 1}, {"_id": "BON.PA", "nom": "bonduelle", "mt_id": "BON", "secteur": "consumer defensive", "supersecteur": "packaged foods", "pays": "france", "flag": "", "actif": 1}, {"_id": "CS.PA", "nom": "axa", "mt_id": "CS.FR", "secteur": "financial services", "supersecteur": "insurance-diversified", "pays": "france", "flag": "", "actif": 1}, {"_id": "FLY.PA", "nom": "societe fonciere lyonnaise", "mt_id": "FLY", "secteur": "real estate", "supersecteur": "reit-office", "pays": "france", "flag": "", "actif": 0}, {"_id": "ING.PA", "nom": "ingenico", "mt_id": "ING1", "secteur": "technology", "supersecteur": "software-infrastructure", "pays": "france", "flag": "", "actif": 0}, {"_id": "NEOEN.PA", "nom": "neoen", "mt_id": "NEOEN", "secteur": "utilities", "supersecteur": "utilities-renewable", "pays": "france", "flag": "", "actif": 0}, {"_id": "OR.PA", "nom": "l'oreal", "mt_id": "OR", "secteur": "consumer defensive", "supersecteur": "household & personal products", "pays": "france", "flag": "", "actif": 1}, {"_id": "RBT.PA", "nom": "robertet", "mt_id": "RBT", "secteur": "basic materials", "supersecteur": "basic materials", "pays": "france", "flag": "", "actif": 0}, {"_id": "TEP.PA", "nom": "teleperformance", "mt_id": "TEP", "secteur": "industrials", "supersecteur": "consulting services", "pays": "france", "flag": "", "actif": 0}, {"_id": "RF.PA", "nom": "eurazeo", "mt_id": "RF.FR", "secteur": "financial services", "supersecteur": "asset management", "pays": "france", "flag": "", "actif": 0}, {"_id": "SGO.PA", "nom": "saint-gobain", "mt_id": "SGO", "secteur": "industrials", "supersecteur": "building products & equipment", "pays": "france", "flag": "", "actif": 1}, {"_id": "SU.PA", "nom": "schneider electric", "mt_id": "SU", "secteur": "industrials", "supersecteur": "specialty industrial machinery", "pays": "france", "flag": "", "actif": 1}, {"_id": "TRI.PA", "nom": "trigano", "mt_id": "TRI", "secteur": "consumer cyclical", "supersecteur": "recreational vehicles", "pays": "france", "flag": "", "actif": 0}, {"_id": "UBI.PA", "nom": "ubisoft", "mt_id": "UBI", "secteur": "communication services", "supersecteur": "electronic gaming & multimedia", "pays": "france", "flag": "", "actif": 1}]}
+{
+   "symboles":[
+      {
+         "_id":"ABIO.PA",
+         "nom":"albioma",
+         "mt_id":"#ABIO",
+         "secteur":"utilities",
+         "supersecteur":"utilities-renewable",
+         "pays":"france",
+         "flag":"",
+         "actif":0
+      
+},
+      {
+         "_id":"AC.PA",
+         "nom":"accor",
+         "mt_id":"#AC",
+         "secteur":"consumer cyclical",
+         "supersecteur":"lodging",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"AF.PA",
+         "nom":"airfrance-klm",
+         "mt_id":"#AF",
+         "secteur":"industrials",
+         "supersecteur":"airlines",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"AI.PA",
+         "nom":"air liquide",
+         "mt_id":"#AI",
+         "secteur":"basic materials",
+         "supersecteur":"chemicals",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"AKE.PA",
+         "nom":"arkema",
+         "mt_id":"#AKE",
+         "secteur":"basic materials",
+         "supersecteur":"specialty chemicals",
+         "pays":"france",
+         "flag":"",
+         "actif":0
+      
+},
+      {
+         "_id":"ALO.PA",
+         "nom":"alstom",
+         "mt_id":"#ALO",
+         "secteur":"industrials",
+         "supersecteur":"specialty industrial machinery",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"ALTA.PA",
+         "nom":"altarea",
+         "mt_id":"#ALTA",
+         "secteur":"real estate",
+         "supersecteur":"reit-residential",
+         "pays":"france",
+         "flag":"",
+         "actif":0
+      
+},
+      {
+         "_id":"AMUN.PA",
+         "nom":"amundi",
+         "mt_id":"#AMUN",
+         "secteur":"financial services",
+         "supersecteur":"asset management",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"ATE.PA",
+         "nom":"alten",
+         "mt_id":"#ATE",
+         "secteur":"technology",
+         "supersecteur":"information technology services",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"BN.PA",
+         "nom":"danone",
+         "mt_id":"#BN",
+         "secteur":"consumer defensive",
+         "supersecteur":"packaged foods",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"BNP.PA",
+         "nom":"bnp paribas",
+         "mt_id":"#BNP",
+         "secteur":"financial services",
+         "supersecteur":"banks-regional",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"BVI.PA",
+         "nom":"bureau veritas",
+         "mt_id":"#BVI",
+         "secteur":"industrials",
+         "supersecteur":"consulting services",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"CAP.PA",
+         "nom":"capgemini",
+         "mt_id":"#CAP",
+         "secteur":"technology",
+         "supersecteur":"information technology services",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"CARM.PA",
+         "nom":"carmila",
+         "mt_id":"#CARM",
+         "secteur":"real estate",
+         "supersecteur":"reit-retail",
+         "pays":"france",
+         "flag":"",
+         "actif":0
+      
+},
+      {
+         "_id":"CDI.PA",
+         "nom":"christian dior",
+         "mt_id":"#CDI",
+         "secteur":"consumer cyclical",
+         "supersecteur":"luxury goods",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"CGG.PA",
+         "nom":"cgg",
+         "mt_id":"#CGG",
+         "secteur":"energy",
+         "supersecteur":"oil & gas equipment & services",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"COFA.PA",
+         "nom":"coface",
+         "mt_id":"#COFA",
+         "secteur":"financial services",
+         "supersecteur":"insurance-reinsurance",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"COX.PA",
+         "nom":"nicox",
+         "mt_id":"#COX",
+         "secteur":"healthcare",
+         "supersecteur":"biotechnology",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"DBV.PA",
+         "nom":"dbv technologies",
+         "mt_id":"#DBV",
+         "secteur":"healthcare",
+         "supersecteur":"biotechnology",
+         "pays":"france",
+         "flag":"",
+         "actif":0
+      
+},
+      {
+         "_id":"DEC.PA",
+         "nom":"jcdecaux",
+         "mt_id":"#DEC",
+         "secteur":"communication services",
+         "supersecteur":"advertising agencies",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"DG.PA",
+         "nom":"vinci",
+         "mt_id":"#DG",
+         "secteur":"industrials",
+         "supersecteur":"engineering & construction",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"DIM.PA",
+         "nom":"sartorius stedim biotech",
+         "mt_id":"#DIM",
+         "secteur":"healthcare",
+         "supersecteur":"medical instruments & supplies",
+         "pays":"france",
+         "flag":"",
+         "actif":0
+      
+},
+      {
+         "_id":"DSY.PA",
+         "nom":"dassault systemes",
+         "mt_id":"#DSY",
+         "secteur":"technology",
+         "supersecteur":"software-application",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"EDEN.PA",
+         "nom":"edenred",
+         "mt_id":"#EDEN",
+         "secteur":"financial services",
+         "supersecteur":"credit services",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"EDF.PA",
+         "nom":"edf",
+         "mt_id":"#EDF",
+         "secteur":"utilities",
+         "supersecteur":"utilities-diversified",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"EL.PA",
+         "nom":"essilorluxottica",
+         "mt_id":"#EI",
+         "secteur":"healthcare",
+         "supersecteur":"medical instruments & supplies",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"ELIS.PA",
+         "nom":"elis",
+         "mt_id":"#ELIS",
+         "secteur":"industrials",
+         "supersecteur":"specialty business services",
+         "pays":"france",
+         "flag":"",
+         "actif":0
+      
+},
+      {
+         "_id":"EN.PA",
+         "nom":"bouygues",
+         "mt_id":"#EN",
+         "secteur":"industrials",
+         "supersecteur":"engineering & construction",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"ENGI.PA",
+         "nom":"engie",
+         "mt_id":"#ENGI",
+         "secteur":"utilities",
+         "supersecteur":"utilities-diversified",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"ENX.PA",
+         "nom":"euronext",
+         "mt_id":"#ENX",
+         "secteur":"financial services",
+         "supersecteur":"financial data & stock exchanges",
+         "pays":"france",
+         "flag":"",
+         "actif":0
+      
+},
+      {
+         "_id":"EO.PA",
+         "nom":"faurecia",
+         "mt_id":"#EO",
+         "secteur":"consumer cyclical",
+         "supersecteur":"auto parts",
+         "pays":"france",
+         "flag":"",
+         "actif":0
+      
+},
+      {
+         "_id":"ERA.PA",
+         "nom":"eramet",
+         "mt_id":"#ERA",
+         "secteur":"basic materials",
+         "supersecteur":"other industrial metals & mining",
+         "pays":"france",
+         "flag":"",
+         "actif":0
+      
+},
+      {
+         "_id":"ETL.PA",
+         "nom":"eutelsat",
+         "mt_id":"#ETL",
+         "secteur":"technology",
+         "supersecteur":"communication equipment",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"FFP.PA",
+         "nom":"ffp",
+         "mt_id":"#FFP",
+         "secteur":"financial services",
+         "supersecteur":"asset management",
+         "pays":"france",
+         "flag":"",
+         "actif":0
+      
+},
+      {
+         "_id":"EUCAR.PA",
+         "nom":"europcar",
+         "mt_id":"#EUCAR",
+         "secteur":"industrials",
+         "supersecteur":"rental & leasing services",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"FGR.PA",
+         "nom":"eiffage",
+         "mt_id":"#FGR",
+         "secteur":"industrials",
+         "supersecteur":"engineering & construction",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"FNAC.PA",
+         "nom":"fnac darty",
+         "mt_id":"#FNAC",
+         "secteur":"consumer cyclical",
+         "supersecteur":"specialty retail",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"FP.PA",
+         "nom":"total",
+         "mt_id":"#FP",
+         "secteur":"energy",
+         "supersecteur":"oil & gas integrated",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"GET.PA",
+         "nom":"getlink",
+         "mt_id":"#GET",
+         "secteur":"industrials",
+         "supersecteur":"railroads",
+         "pays":"france",
+         "flag":"",
+         "actif":0
+      
+},
+      {
+         "_id":"GFC.PA",
+         "nom":"gecina",
+         "mt_id":"#GFC",
+         "secteur":"real estate",
+         "supersecteur":"reit-office",
+         "pays":"france",
+         "flag":"",
+         "actif":0
+      
+},
+      {
+         "_id":"GLE.PA",
+         "nom":"societe generale",
+         "mt_id":"#GLE",
+         "secteur":"financial services",
+         "supersecteur":"banks-regional",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"GNFT.PA",
+         "nom":"genfit",
+         "mt_id":"#GNFT",
+         "secteur":"healthcare",
+         "supersecteur":"biotechnology",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"GTT.PA",
+         "nom":"gaztransport & technigaz",
+         "mt_id":"#GTT1",
+         "secteur":"energy",
+         "supersecteur":"oil & gas equipment & services",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"HO.PA",
+         "nom":"thales",
+         "mt_id":"#HO",
+         "secteur":"industrials",
+         "supersecteur":"aerospace & defense",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"ICAD.PA",
+         "nom":"icade",
+         "mt_id":"#ICAD",
+         "secteur":"real estate",
+         "supersecteur":"reit-diversified",
+         "pays":"france",
+         "flag":"",
+         "actif":0
+      
+},
+      {
+         "_id":"ILD.PA",
+         "nom":"iliad",
+         "mt_id":"#ILD",
+         "secteur":"communication services",
+         "supersecteur":"telecom services",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"IPN.PA",
+         "nom":"ipsen",
+         "mt_id":"#IPN",
+         "secteur":"healthcare",
+         "supersecteur":"drug manufacturers-specialty & generic",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"KER.PA",
+         "nom":"kering",
+         "mt_id":"#KER",
+         "secteur":"consumer cyclical",
+         "supersecteur":"footwear & accessories",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"KOF.PA",
+         "nom":"kaufman & broad",
+         "mt_id":"#KOF",
+         "secteur":"consumer cyclical",
+         "supersecteur":"residential construction",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"KORI.PA",
+         "nom":"korian",
+         "mt_id":"#KOR",
+         "secteur":"healthcare",
+         "supersecteur":"medical care facilities",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"AB.PA",
+         "nom":"ab science",
+         "mt_id":"#AB",
+         "secteur":"healthcare",
+         "supersecteur":"drug manufacturers\u2014specialty & generic",
+         "pays":"france",
+         "flag":"",
+         "actif":0
+      
+},
+      {
+         "_id":"LI.PA",
+         "nom":"klepierre",
+         "mt_id":"#LI",
+         "secteur":"real estate",
+         "supersecteur":"reit-retail",
+         "pays":"france",
+         "flag":"",
+         "actif":0
+      
+},
+      {
+         "_id":"VRLA.PA",
+         "nom":"verallia",
+         "mt_id":"#VRLA",
+         "secteur":"consumer cyclical",
+         "supersecteur":"packaging & containers",
+         "pays":"france",
+         "flag":"",
+         "actif":0
+      
+},
+      {
+         "_id":"LOCAL.PA",
+         "nom":"solocal",
+         "mt_id":"#LOCAL",
+         "secteur":"communication services",
+         "supersecteur":"advertising agencies",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"LR.PA",
+         "nom":"legrand",
+         "mt_id":"#LR",
+         "secteur":"industrials",
+         "supersecteur":"specialty industrial machinery",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"MAU.PA",
+         "nom":"etablissements maurel & prom",
+         "mt_id":"#MAU",
+         "secteur":"energy",
+         "supersecteur":"oil & gas e&p",
+         "pays":"france",
+         "flag":"",
+         "actif":0
+      
+},
+      {
+         "_id":"MDM.PA",
+         "nom":"maisons du monde ",
+         "mt_id":"#MDM",
+         "secteur":"consumer cyclical",
+         "supersecteur":"home improvement retail",
+         "pays":"france",
+         "flag":"",
+         "actif":0
+      
+},
+      {
+         "_id":"MERY.PA",
+         "nom":"mercialys",
+         "mt_id":"#MERY",
+         "secteur":"real estate",
+         "supersecteur":"reit-retail",
+         "pays":"france",
+         "flag":"",
+         "actif":0
+      
+},
+      {
+         "_id":"MF.PA",
+         "nom":"wendel",
+         "mt_id":"#MF",
+         "secteur":"financial services",
+         "supersecteur":"asset management",
+         "pays":"france",
+         "flag":"",
+         "actif":0
+      
+},
+      {
+         "_id":"MMB.PA",
+         "nom":"lagardere",
+         "mt_id":"#MMB",
+         "secteur":"consumer cyclical",
+         "supersecteur":"travel services",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"MMT.PA",
+         "nom":"metropole television",
+         "mt_id":"#MMT",
+         "secteur":"communication services",
+         "supersecteur":"broadcasting",
+         "pays":"france",
+         "flag":"",
+         "actif":0
+      
+},
+      {
+         "_id":"MRN.PA",
+         "nom":"mersen",
+         "mt_id":"#MRN",
+         "secteur":"industrials",
+         "supersecteur":"electrical equipment & parts",
+         "pays":"france",
+         "flag":"",
+         "actif":0
+      
+},
+      {
+         "_id":"NK.PA",
+         "nom":"imerys",
+         "mt_id":"#NK",
+         "secteur":"basic materials",
+         "supersecteur":"building materials",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"NXI.PA",
+         "nom":"nexity",
+         "mt_id":"#NXI",
+         "secteur":"real estate",
+         "supersecteur":"real estate-diversified",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"ORA.PA",
+         "nom":"orange",
+         "mt_id":"#ORA",
+         "secteur":"communication services",
+         "supersecteur":"telecom services",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"ORP.PA",
+         "nom":"orpea",
+         "mt_id":"#ORP",
+         "secteur":"healthcare",
+         "supersecteur":"medical care facilities",
+         "pays":"france",
+         "flag":"",
+         "actif":0
+      
+},
+      {
+         "_id":"POM.PA",
+         "nom":"compagnie plastic omnium",
+         "mt_id":"#POM",
+         "secteur":"consumer cyclical",
+         "supersecteur":"auto parts",
+         "pays":"france",
+         "flag":"",
+         "actif":0
+      
+},
+      {
+         "_id":"PUB.PA",
+         "nom":"publicis",
+         "mt_id":"#PUB",
+         "secteur":"communication services",
+         "supersecteur":"advertising agencies",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"RAL.PA",
+         "nom":"rallye",
+         "mt_id":"#RAL",
+         "secteur":"consumer defensive",
+         "supersecteur":"grocery stores",
+         "pays":"france",
+         "flag":"",
+         "actif":0
+      
+},
+      {
+         "_id":"RI.PA",
+         "nom":"pernod ricard",
+         "mt_id":"#RI",
+         "secteur":"consumer defensive",
+         "supersecteur":"beverages\u2014wineries & distilleries",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"RIN.PA",
+         "nom":"vilmorin",
+         "mt_id":"#RIN",
+         "secteur":"consumer defensive",
+         "supersecteur":"farm products",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"RMS.PA",
+         "nom":"herm\u00e8s",
+         "mt_id":"#RMS",
+         "secteur":"consumer cyclical",
+         "supersecteur":"luxury goods",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"RNO.PA",
+         "nom":"renault",
+         "mt_id":"#RNO",
+         "secteur":"consumer cyclical",
+         "supersecteur":"auto manufacturers",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"ROTH.PA",
+         "nom":"rothschild",
+         "mt_id":"#ROTH",
+         "secteur":"financial services",
+         "supersecteur":"capital markets",
+         "pays":"france",
+         "flag":"",
+         "actif":0
+      
+},
+      {
+         "_id":"RUI.PA",
+         "nom":"rubis",
+         "mt_id":"#RUI",
+         "secteur":"utilities",
+         "supersecteur":"utilities-regulated gas",
+         "pays":"france",
+         "flag":"",
+         "actif":0
+      
+},
+      {
+         "_id":"RXL.PA",
+         "nom":"rexel",
+         "mt_id":"#RXL",
+         "secteur":"industrials",
+         "supersecteur":"industrial distribution",
+         "pays":"france",
+         "flag":"",
+         "actif":0
+      
+},
+      {
+         "_id":"SAF.PA",
+         "nom":"safran",
+         "mt_id":"#SAF",
+         "secteur":"industrials",
+         "supersecteur":"aerospace & defense",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"SAN.PA",
+         "nom":"sanofi",
+         "mt_id":"#SAN",
+         "secteur":"healthcare",
+         "supersecteur":"drug manufacturers-general",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"SEV.PA",
+         "nom":"suez",
+         "mt_id":"#SEV",
+         "secteur":"utilities",
+         "supersecteur":"utilities-regulated water",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"SK.PA",
+         "nom":"seb",
+         "mt_id":"#SK",
+         "secteur":"consumer cyclical",
+         "supersecteur":"furnishings fixtures & appliances",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"SOP.PA",
+         "nom":"sopra steria",
+         "mt_id":"#SOP",
+         "secteur":"technology",
+         "supersecteur":"information technology services",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"SPIE.PA",
+         "nom":"spie",
+         "mt_id":"#SPIE",
+         "secteur":"industrials",
+         "supersecteur":"engineering & construction",
+         "pays":"france",
+         "flag":"",
+         "actif":0
+      
+},
+      {
+         "_id":"SW.PA",
+         "nom":"sodexo",
+         "mt_id":"#SW",
+         "secteur":"industrials",
+         "supersecteur":"specialty business services",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"TCH.PA",
+         "nom":"technicolor",
+         "mt_id":"#TCH",
+         "secteur":"communication services",
+         "supersecteur":"entertainment",
+         "pays":"france",
+         "flag":"",
+         "actif":0
+      
+},
+      {
+         "_id":"TF1.PA",
+         "nom":"tf1",
+         "mt_id":"#TF1",
+         "secteur":"communication services",
+         "supersecteur":"broadcasting",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"TKTT.PA",
+         "nom":"tarkett",
+         "mt_id":"#TKTT",
+         "secteur":"industrials",
+         "supersecteur":"building products & equipment",
+         "pays":"france",
+         "flag":"",
+         "actif":0
+      
+},
+      {
+         "_id":"UG.PA",
+         "nom":"peugeot",
+         "mt_id":"#UG",
+         "secteur":"consumer cyclical",
+         "supersecteur":"auto manufacturers",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"VIE.PA",
+         "nom":"veolia environnement",
+         "mt_id":"#VIE",
+         "secteur":"industrials",
+         "supersecteur":"waste management",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"VIRP.PA",
+         "nom":"virbac",
+         "mt_id":"#VIRP",
+         "secteur":"healthcare",
+         "supersecteur":"drug manufacturers-general",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"VK.PA",
+         "nom":"vallourec",
+         "mt_id":"#VK",
+         "secteur":"basic materials",
+         "supersecteur":"steel",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"WLN.PA",
+         "nom":"worldline",
+         "mt_id":"#WLN",
+         "secteur":"technology",
+         "supersecteur":"software-infrastructure",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"ACA.PA",
+         "nom":"credit agricole",
+         "mt_id":"#ACA",
+         "secteur":"financial services",
+         "supersecteur":"banks-regional",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"BB.PA",
+         "nom":"bic",
+         "mt_id":"#BB.FR",
+         "secteur":"consumer defensive",
+         "supersecteur":"household & personal products",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"BIM.PA",
+         "nom":"biomerieux",
+         "mt_id":"#BIM",
+         "secteur":"healthcare",
+         "supersecteur":"diagnostics & research",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"BON.PA",
+         "nom":"bonduelle",
+         "mt_id":"#BON",
+         "secteur":"consumer defensive",
+         "supersecteur":"packaged foods",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"CS.PA",
+         "nom":"axa",
+         "mt_id":"#CS.FR",
+         "secteur":"financial services",
+         "supersecteur":"insurance-diversified",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"FLY.PA",
+         "nom":"societe fonciere lyonnaise",
+         "mt_id":"#FLY",
+         "secteur":"real estate",
+         "supersecteur":"reit-office",
+         "pays":"france",
+         "flag":"",
+         "actif":0
+      
+},
+      {
+         "_id":"ING.PA",
+         "nom":"ingenico",
+         "mt_id":"#ING1",
+         "secteur":"technology",
+         "supersecteur":"software-infrastructure",
+         "pays":"france",
+         "flag":"",
+         "actif":0
+      
+},
+      {
+         "_id":"NEOEN.PA",
+         "nom":"neoen",
+         "mt_id":"#NEOEN",
+         "secteur":"utilities",
+         "supersecteur":"utilities-renewable",
+         "pays":"france",
+         "flag":"",
+         "actif":0
+      
+},
+      {
+         "_id":"OR.PA",
+         "nom":"l'oreal",
+         "mt_id":"#OR",
+         "secteur":"consumer defensive",
+         "supersecteur":"household & personal products",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"RBT.PA",
+         "nom":"robertet",
+         "mt_id":"#RBT",
+         "secteur":"basic materials",
+         "supersecteur":"basic materials",
+         "pays":"france",
+         "flag":"",
+         "actif":0
+      
+},
+      {
+         "_id":"TEP.PA",
+         "nom":"teleperformance",
+         "mt_id":"#TEP",
+         "secteur":"industrials",
+         "supersecteur":"consulting services",
+         "pays":"france",
+         "flag":"",
+         "actif":0
+      
+},
+      {
+         "_id":"RF.PA",
+         "nom":"eurazeo",
+         "mt_id":"#RF.FR",
+         "secteur":"financial services",
+         "supersecteur":"asset management",
+         "pays":"france",
+         "flag":"",
+         "actif":0
+      
+},
+      {
+         "_id":"SGO.PA",
+         "nom":"saint-gobain",
+         "mt_id":"#SGO",
+         "secteur":"industrials",
+         "supersecteur":"building products & equipment",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"SU.PA",
+         "nom":"schneider electric",
+         "mt_id":"#SU",
+         "secteur":"industrials",
+         "supersecteur":"specialty industrial machinery",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+},
+      {
+         "_id":"TRI.PA",
+         "nom":"trigano",
+         "mt_id":"#TRI",
+         "secteur":"consumer cyclical",
+         "supersecteur":"recreational vehicles",
+         "pays":"france",
+         "flag":"",
+         "actif":0
+      
+},
+      {
+         "_id":"UBI.PA",
+         "nom":"ubisoft",
+         "mt_id":"#UBI",
+         "secteur":"communication services",
+         "supersecteur":"electronic gaming & multimedia",
+         "pays":"france",
+         "flag":"",
+         "actif":1
+      
+}
+   
+]
+}
