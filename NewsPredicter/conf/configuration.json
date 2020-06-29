@@ -1,9 +1,9 @@
 {
 
-  "initSymbolJsonPath": "data/symboles/initSymboles.json",
-  "logDirPath": "output/logs",
-  "pricesPath": "output/prices/prices.csv",
-  "modelDir": "output/model/",
+  "initSymbolJsonPath": "/data/symboles/initSymboles.json",
+  "logDirPath": "/output/logs",
+  "pricesPath": "/output/prices/prices.csv",
+  "modelDir": "/output/model/",
   "newsKeyApi": "862c7993367f4114a12552f2f1a1c522",
 
   "mongo": {

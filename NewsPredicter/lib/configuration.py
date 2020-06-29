@@ -7,7 +7,7 @@ class Configuration:
 
     def __init__(self):
 
-        self.conf = json.load(open("conf/configuration.json", "r"))
+        self.conf = json.load(open("/conf/configuration.json", "r"))
         self.col = None
 
     def setCollection(self, collection):

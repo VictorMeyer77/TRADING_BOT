@@ -5,6 +5,7 @@
       "predictionName": "prediction",
       "accountInfoName": "accountInfo",
       "tradeInfoName": "tradeInfo",
-      "configurationName": "configuration"
+      "configurationName": "configuration",
+      "symbolesName": "symboles"
   }
 }
