@@ -27,8 +27,8 @@ services :
     command: "sh entry.sh"
     network_mode: host
 
-  oracle-server:
-    container_name: ORACLE_SERVER
+  api:
+    container_name: API
     build: Api
     depends_on:
       - mongodb
