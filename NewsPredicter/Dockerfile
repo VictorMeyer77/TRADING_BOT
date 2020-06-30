@@ -24,6 +24,8 @@ RUN dpkg --add-architecture armhf && dpkg --add-architecture arm64 \
         gfortran libatlas-base-dev libopenblas-dev liblapack-dev libxml2-dev libxslt-dev \
         libhdf5-dev libc-ares-dev libeigen3-dev libblas-dev cython cron python-h5py
 
+RUN ln -snf /usr/share/zoneinfo/Europe/Paris /etc/localtime && echo Europe/Paris > /etc/timezone
+
 RUN wget https://github.com/Qengineering/Tensorflow-Raspberry-Pi/raw/master/tensorflow-2.1.0-cp37-cp37m-linux_armv7l.whl
 
 RUN pip3 install firebase-admin scikit-learn --index-url https://piwheels.org/simple

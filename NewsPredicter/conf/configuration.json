@@ -4,7 +4,7 @@
   "logDirPath": "/output/logs",
   "pricesPath": "/output/prices/prices.csv",
   "modelDir": "/output/model/",
-  "newsKeyApi": "5512610f5ac64c2d8987eeba251cd0f3",
+  "newsKeyApi": "862c7993367f4114a12552f2f1a1c522",
 
   "mongo": {
       "host": "192.168.1.15",
