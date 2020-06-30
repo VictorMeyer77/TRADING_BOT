@@ -22,8 +22,7 @@
      "model": {
       "nbDayBeforePred": 1,
       "deltaToTrade": 3,
-      "maxNbLayer": 0,
-      "nbNeurPerLayer": [3],
+      "nbNeurPerLayer": [10],
       "layerActivation": ["relu", "tanh", "softmax"],
       "nbOutput": 3,
       "epochs": 10,

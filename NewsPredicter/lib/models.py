@@ -46,13 +46,13 @@ class Models:
 
     # génère les patterns de modèle pour la moulinette
 
-    def getPatternToTrain(self, maxNbhiddenLayer, neuralPerLayer, layerActivation, nbOutput):
+    def getPatternToTrain(self, neuralPerLayer, layerActivation, nbOutput):
 
         patterns = {}
         outputLayer = []
         neurals = []
 
-        for i in range(0, maxNbhiddenLayer + 1):
+        for i in range(0, len(neuralPerLayer) + 1):
             if i == 0:
                 for activation in layerActivation:
                     outputLayer.append([[nbOutput, activation]])
@@ -213,8 +213,7 @@ class Models:
         start = datetime.now().timestamp()
         self.models = {}
         self.linearSvc()
-        pattern = self.getPatternToTrain(int(self.conf["maxNbLayer"]),
-                                         self.conf["nbNeurPerLayer"],
+        pattern = self.getPatternToTrain(self.conf["nbNeurPerLayer"],
                                          self.conf["layerActivation"],
                                          int(self.conf["nbOutput"]))
         self.generateMlp(pattern, int(self.conf["batchSize"]), int(self.conf["epochs"]))
