@@ -30,10 +30,10 @@ if __name__ == "__main__":
                       symbolesDao, logger)
     newsDao.hydrateInitNews()
 
-    #pricesDao.setPriceDf(60)
+    pricesDao.setPriceDf(60)
     #à décommenter pour ne pas avoir à récuperer les prix à chaque exécution
-    #pricesDao.writePrices(conf["pricesPath"])
-    pricesDao.loadPrices(conf["pricesPath"])
+    pricesDao.writePrices(conf["pricesPath"])
+    #pricesDao.loadPrices(conf["pricesPath"])
 
     newsFormater = NewsFormater(symboles, newsDao.getDfToTrain(), pricesDao.prices,
                                 conf["userParam"]["model"]["nbDayBeforePred"],

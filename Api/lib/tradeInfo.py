@@ -21,7 +21,7 @@ class TradeInfo:
     def insert(self):
 
         try:
-            self.col.insert({"symbole": self.symbole,
+            self.col.insert({"symbole": self.symbole.replace("!", "#"),
                              "type": self.type,
                              "status": self.status,
                              "swap": self.swap,

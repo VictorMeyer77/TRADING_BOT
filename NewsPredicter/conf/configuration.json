@@ -4,7 +4,7 @@
   "logDirPath": "/output/logs",
   "pricesPath": "/output/prices/prices.csv",
   "modelDir": "/output/model/",
-  "newsKeyApi": "862c7993367f4114a12552f2f1a1c522",
+  "newsKeyApi": "5512610f5ac64c2d8987eeba251cd0f3",
 
   "mongo": {
       "host": "debian",
@@ -22,8 +22,7 @@
      "model": {
       "nbDayBeforePred": 1,
       "deltaToTrade": 3,
-      "maxNbLayer": 0,
-      "nbNeurPerLayer": [3],
+      "nbNeurPerLayer": [10],
       "layerActivation": ["relu", "tanh", "softmax"],
       "nbOutput": 3,
       "epochs": 10,

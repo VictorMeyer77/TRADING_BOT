@@ -24,7 +24,7 @@ services :
       - mongodb
     environment:
       - TZ=Europe/Paris
-    command: "sh entry.sh"
+    command: sh entry.sh
     network_mode: host
 
   api:
@@ -39,4 +39,3 @@ services :
 
 volumes:
   mongodb:
-  NewsPredicter:

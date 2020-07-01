@@ -925,9 +925,9 @@
 
 },
       {
-         "_id":"TF1.PA",
+         "_id":"TFI.PA",
          "nom":"tf1",
-         "mt_id":"#TF1",
+         "mt_id":"#TFI",
          "secteur":"communication services",
          "supersecteur":"broadcasting",
          "pays":"france",
