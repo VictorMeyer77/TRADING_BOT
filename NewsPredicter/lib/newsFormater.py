@@ -154,23 +154,29 @@ class NewsFormater:
             tmp = prices[prices["entreprise"] == priceNews.at[index, "entreprise"]]
             tmp = tmp[tmp["date"] == priceNews.at[index, "date_pub"]]
 
-            if tmp.shape[0] == 0 or \
-                    tmp.index + self.nbDayToPred > prices.shape[0] or \
-                    prices.at[tmp.index[0], "entreprise"] != prices.at[(tmp.index + self.nbDayToPred)[0], "entreprise"]:
+            try:
+
+                if tmp.shape[0] == 0 or \
+                        tmp.index + self.nbDayToPred > prices.shape[0] or \
+                        prices.at[tmp.index[0], "entreprise"] != prices.at[(tmp.index + self.nbDayToPred)[0], "entreprise"]:
+                    banInd.append(index)
+
+                else:
+                    start = float(prices.at[tmp.index[0], "open"])
+                    end = float(prices.at[(tmp.index + self.nbDayToPred)[0], "close"])
+
+                    if (end - start) / start > self.deltaToPred / 100:
+                        priceNews.at[index, "trend"] = 1
+                    elif (end - start) / start < -(self.deltaToPred / 100):
+                        priceNews.at[index, "trend"] = 2
+                    else:
+                        priceNews.at[index, "trend"] = 0
+
+            except Exception as e:
+                self.logger.addLog("ERROR", "NewsFormater", str(e))
                 banInd.append(index)
 
-            else:
-                start = float(prices.at[tmp.index[0], "open"])
-                end = float(prices.at[(tmp.index + self.nbDayToPred)[0], "close"])
-
-                if (end - start) / start > self.deltaToPred / 100:
-                    priceNews.at[index, "trend"] = 1
-                elif (end - start) / start < -(self.deltaToPred / 100):
-                    priceNews.at[index, "trend"] = 2
-                else:
-                    priceNews.at[index, "trend"] = 0
-
-        self.logger.addLog("INFO", "NewsPredicter", "Concaténation des prix n+{} après la news".format(self.nbDayToPred))
+        self.logger.addLog("INFO", "NewsFormater", "Concaténation des prix n+{} après la news".format(self.nbDayToPred))
         return priceNews.drop(banInd, axis=0)
 
     # applique les fonctions pour créer le dataset
@@ -207,7 +213,7 @@ class NewsFormater:
             index += 1
             yTrain.append(self.clearDataset.at[ind, "trend"])
 
-        self.logger.addLog("INFO", "NewsPredicter",
+        self.logger.addLog("INFO", "NewsFormater",
                            "Génération des données d'entrainement. x_train shape: {}".format(str(xTrain.shape)))
         return xTrain.to_numpy(), np.array(yTrain)
 
@@ -236,6 +242,6 @@ class NewsFormater:
                 if word in xTest.columns.to_list():
                     xTest.at[i, word] = 1
 
-        self.logger.addLog("INFO", "NewsPredicter",
+        self.logger.addLog("INFO", "NewsFormater",
                            "Génération des données à tester. x_test shape: {}".format(str(xTest.shape)))
         return xTest.to_numpy()
