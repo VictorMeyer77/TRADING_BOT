@@ -1,3 +1,5 @@
+from bson.json_util import dumps
+
 class Ihmapi:
 
     def __init__(self, client):
@@ -16,7 +18,7 @@ class Ihmapi:
         objects = {"objects": []}
 
         for obj in mongoRes:
-            objects["objects"].append(obj)
+            objects["objects"].append(dumps(obj))
         objects["count"] = mongoRes.count()
         return objects
 
