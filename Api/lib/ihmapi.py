@@ -15,12 +15,9 @@ class Ihmapi:
     def getObjects(col, filterColumn, filter):
 
         mongoRes = col.find({filterColumn: filter}) if (filter is not None and filterColumn is not None) else col.find()
-        objects = {"objects": []}
+        objects = {"objects": [doc for doc in mongoRes], "count": mongoRes.count()}
 
-        for obj in mongoRes:
-            objects["objects"].append(dumps(obj))
-        objects["count"] = mongoRes.count()
-        return objects
+        return dumps(objects)
 
     def get(self, collectionName, filterColumn, filter):
 
