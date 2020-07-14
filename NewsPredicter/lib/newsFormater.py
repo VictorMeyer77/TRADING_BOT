@@ -143,6 +143,7 @@ class NewsFormater:
 
     # joint les prix au news
 
+
     def joinNewsPrices(self, news, prices):
 
         priceNews = news
@@ -154,25 +155,27 @@ class NewsFormater:
             tmp = prices[prices["entreprise"] == priceNews.at[index, "entreprise"]]
             tmp = tmp[tmp["date"] == priceNews.at[index, "date_pub"]]
 
-            if tmp.shape[0] == 0 or \
-                    tmp.index + self.nbDayToPred > prices.shape[0] or \
-                    prices.at[tmp.index[0], "entreprise"] != prices.at[(tmp.index + self.nbDayToPred)[0], "entreprise"]:
-                banInd.append(index)
+            try:
 
-            else:
-                start = float(prices.at[tmp.index[0], "open"])
-                end = float(prices.at[(tmp.index + self.nbDayToPred)[0], "close"])
+                if tmp.shape[0] == 0 or \
+                        tmp.index + self.nbDayToPred > prices.shape[0] or \
+                        prices.at[tmp.index[0], "entreprise"] != prices.at[(tmp.index + self.nbDayToPred)[0], "entreprise"]:
+                    banInd.append(index)
 
-                if (end - start) / start > self.deltaToPred / 100:
-                    priceNews.at[index, "trend"] = 1
-                elif (end - start) / start < -(self.deltaToPred / 100):
-                    priceNews.at[index, "trend"] = 2
                 else:
-                    priceNews.at[index, "trend"] = 0
+                    start = float(prices.at[tmp.index[0], "open"])
+                    end = float(prices.at[(tmp.index + self.nbDayToPred)[0], "close"])
 
-        self.logger.addLog("INFO", "NewsPredicter", "Concaténation des prix n+{} après la news".format(self.nbDayToPred))
-        return priceNews.drop(banInd, axis=0)
+                    if (end - start) / start > self.deltaToPred / 100:
+                        priceNews.at[index, "trend"] = 1
+                    elif (end - start) / start < -(self.deltaToPred / 100):
+                        priceNews.at[index, "trend"] = 2
+                    else:
+                        priceNews.at[index, "trend"] = 0
 
+            except Exception as e:
+                self.logger.addLog("ERROR", "NewsFormater", str(e))
+                banInd.append(index)
     # applique les fonctions pour créer le dataset
 
     def getClearDataset(self):
