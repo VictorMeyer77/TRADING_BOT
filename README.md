@@ -2,6 +2,12 @@
 ### 4IABD Alexandre Matthieu, Fauvert Baptiste, Meyer Victor
 
 Pour lancer le Bot, référez vous à la documentation.
+
+#### important
+NewsPredicter et Api ne sont pas maintenues sur la branche master, certains problèmes
+peuvent survenir.
+Si vous disposez d'un Raspberry, utilisez la branche rpi.
+
 Les instructions suivantes décrivent les manipultaion pour lancer
 l'oracle en local
 
@@ -14,3 +20,8 @@ l'oracle en local
         - Api/conf/configuration.json
         - Api/conf/server.conf
     5) sudo docker-compose up
+    
+#### liens
+
+ihm:  http://ihm.tradingbot.business/
+api:  tradingbot4iabd.hopto.org/
